@@ -8,6 +8,7 @@ class ContactsController < ApplicationController
 
   def new
     # render contacts/new view with new Contact form
+    @company = Company.find_by({"id" => })
   end
 
   def create
